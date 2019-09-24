@@ -5,6 +5,11 @@ html {
   font-size: 137.5%;
   -webkit-font-smoothing: antialiased;
 }
+body{
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient(130deg, #f5d300 45%, #ffffff 45%);
+  min-height: 100px;
+}
 /* Copy & Lists */
 p {
   line-height: 1.5rem;
@@ -19,6 +24,17 @@ ol {
 ul li,
 ol li {
   line-height: 1.5rem;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+ul li ::before{
+  content: "\2022";
+  color: black; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
 }
 ul ul,
 ol ul,
@@ -133,19 +149,11 @@ a {
 }
 a:hover,
 a:focus {
-  color: #00baff;
-}
-
-html, html main.hidden{  
-  background-color: #191919;
-}
-html, html main.visible{  
-  background-color: whitesmoke;
+  color: #ffffff;
 }
 
 
 .visible {
-  background-color: whitesmoke;
   visibility: visible;
   opacity: 1;
   transition: opacity 1s linear, background-color 1000ms linear;
@@ -159,5 +167,6 @@ html, html main.visible{
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 2s, opacity 1s linear;  
+  transition: visibility 0s 1s, opacity 1s linear;  
 }
+

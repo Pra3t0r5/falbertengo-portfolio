@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Splash page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
-<link id="currentStyle" rel="stylesheet" href="./style/style-splash.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'>
+  <link rel="stylesheet" href="../style/normalize.css">
+  <link id="currentStyle" rel="stylesheet" href="./style/style-splash.css">
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
+  <!-- partial:index.partial.html -->
 
-<div id="splash">
-<main class="splash">
-  <div class="splash_logo">
-    FDA
+  <div id="splash">
+    <main class="splash">
+      <div class="splash_logo">
+        FDA
+      </div>
+      <div class="splash_svg">
+        <svg width="100%" height="100%">
+          <rect width="100%" height="100%">
+        </svg>
+      </div>
+      <div class="splash_minimize">
+        <svg width="100%" height="100%">
+          <rect width="100%" height="100%">
+        </svg>
+      </div>
+    </main>
+    <div class="text">
+      <div>
+        <p>Done</p>
+        <p>is beautiful.</p>
+      </div>
+    </div>
   </div>
-  <div class="splash_svg">
-    <svg width="100%" height="100%">
-      <rect width="100%" height="100%" >
-	  </svg>
-  </div>
-  <div class="splash_minimize">
-    <svg width="100%" height="100%">
-      <rect width="100%" height="100%" >
-	  </svg>
-  </div>
-</main>
-<div class="text">
-  <div>
-      <p>Done</p>
-      <p>is beautiful.</p>
-  </div>   
-</div>
-</div>
 
-<main id="portfolio" class="invisible">    
-</main>
+  <main id="portfolio" class="invisible">
+  </main>
 
-</div>
-<!-- partial -->
+  </div>
+  <!-- partial -->
   <script src='./lib/jquery-3.4.1.min.js'></script>
   <script type="text/JavaScript">
     $(document).ready( function(){
@@ -50,12 +53,12 @@
           $("#currentStyle").attr('href', "./style/style-portfolio.css")
           $("#portfolio").load("./include/portfolio.html");
           $("#portfolio").removeClass("invisible").addClass("visible");
-        }, 3000);
-      }, 5500);
+        }, 1000);
+      }, 5000);
     });    
 
   </script>
 
 </body>
-</html>
 
+</html>
