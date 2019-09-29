@@ -8,6 +8,11 @@ html {
 body{
   background-color: #ffffff;
   background-image: -webkit-linear-gradient(130deg, #f5d300 45%, #ffffff 45%);
+  background: -moz-linear-gradient(130deg, #f5d300 45%, #ffffff 45%); /* FF3.6+ */
+  background: -webkit-gradient(130deg, #f5d300 45%, #ffffff 45%); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(130deg, #f5d300 45%, #ffffff 45%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(130deg, #f5d300 45%, #ffffff 45%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(130deg, #f5d300 45%, #ffffff 45%); /* IE10+ */
   min-height: 100px;
 }
 /* Copy & Lists */
